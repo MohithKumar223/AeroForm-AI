@@ -1,0 +1,13 @@
+{
+  "name": "AeroForm AI",
+  "description": "AeroForm AI is an advanced athletic biomechanics platform that transforms standard photos into professional-grade performance data. Using Gemini's vision-language models, it automatically detects sport types, tracks critical joint angles, calculates technical telemetry, and provides expert coaching critiques. Features include training history, Olympic-standard benchmarks, and automated environmental metadata extraction.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "AI Vision Analysis",
+    "Athletic Telemetry",
+    "Pose Estimation"
+  ]
+}
