@@ -49,8 +49,10 @@ export default function App() {
       };
       setHistory(prev => [newItem, ...prev]);
     } catch (err) {
-      console.error(err);
-      setError("AI analysis failed. Please verify your connection and try again.");
+      const errorMsg = err instanceof Error ? err.message : String(err);
+      console.error("Full error:", err);
+      console.error("Error message:", errorMsg);
+      setError(`Error: ${errorMsg}`);
     } finally {
       setLoading(false);
     }
